@@ -28,7 +28,7 @@
 
     <!-- 連結 -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="themes/mobiletest.min.css" />
+    <link rel="stylesheet" href="themes/lunch.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -50,10 +50,12 @@
 
         <div role="main" class="ui-content">
         <p>每次到了午餐時間，學校後門都會被學生擠得水洩不通，好不容易擠出去了附近店家都客滿了，根本沒地方吃飯。於是做這個網頁希望可以幫忙吃不到午餐的同學。</p>
-        <a href="#page01">一定會客滿的地方</a>
-        <a href="#page02">可能有位置的地方</a>
-        <a href="#page03">要走點路但是好吃</a>
-        <a href="#page04">很近但人卻不太多</a>
+        <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">一定會客滿的地方</a>
+        <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">可能有位置的地方</a>
+        <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">要走點路但是好吃</a>
+        <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">很近但人卻不太多</a>
+        <a href="#aboutus" data-role="button" class="ui-btn ui-icon-search ui-btn-icon-left">建議來源</a>
+
 
         </div><!-- /content -->
 
@@ -65,6 +67,13 @@
 
     <!-- 第一分頁 -->
     <div data-role="page" id="page01">
+            <div data-role="panel" id="myPanel"> 
+                <h2>選單選項</h2>
+                <p><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
+                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">可能有位置的地方</a>
+                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">要走點路但是好吃</a>
+                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">很近但人卻不太多</a></p>
+            </div> 
 
         <div data-role="header">
             <h1>一定會客滿的地方</h1>
@@ -76,10 +85,9 @@
         <ol>八八麵館</ol>
         <ol>百年鍋燒</ol>
         <ol>將太</ol></p>
-        <a href="#home">首頁</a>
-        <a href="#page02">可能有位置的地方</a>
-        <a href="#page03">要走點路但是好吃</a>
-        <a href="#page04">很近但人卻不太多</a>
+
+        <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
+        
 
         </div><!-- /content -->
 
@@ -91,6 +99,13 @@
 
     <!-- 第二分頁 -->
     <div data-role="page" id="page02">
+        <div data-role="panel" id="myPanel1"> 
+                <h2>選單選項</h2>
+                <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
+                <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">一定會客滿的地方</a>
+                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">要走點路但是好吃</a>
+                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">很近但人卻不太多</a>
+            </div> 
 
         <div data-role="header">
             <h1>可能有位置的地方</h1>
@@ -102,10 +117,8 @@
             <ol>21金</ol>
             <ol>50元飯捲</ol>
             <ol>小豬很忙</ol></p>
-        <a href="#home">首頁</a>
-        <a href="#page01">一定會客滿的地方</a>
-        <a href="#page03">要走點路但是好吃</a>
-        <a href="#page04">很近但人卻不太多</a>
+        
+        <a href="#myPanel1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
 
         </div><!-- /content -->
 
@@ -117,6 +130,13 @@
 
     <!-- 第三分頁 -->
     <div data-role="page" id="page03">
+        <div data-role="panel" id="myPanel2"> 
+                <h2>選單選項</h2>
+                <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
+                <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">一定會客滿的地方</a>
+                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">可能有位置的地方</a>
+                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">很近但人卻不太多</a>
+            </div> 
 
         <div data-role="header">
             <h1>要走點路但是好吃</h1>
@@ -128,10 +148,8 @@
             <ol>豚將拉麵</ol>
             <ol>WHO牛排</ol>
             <ol>丹丹漢堡</ol></p>
-        <a href="#home">首頁</a>
-        <a href="#page01">一定會客滿的地方</a>
-        <a href="#page02">可能有位置的地方</a>
-        <a href="#page04">很近但人卻不太多</a>
+
+        <a href="#myPanel2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
 
         </div><!-- /content -->
 
@@ -143,6 +161,13 @@
 
     <!-- 第四分頁 -->
     <div data-role="page" id="page04">
+        <div data-role="panel" id="myPanel3"> 
+                <h2>選單選項</h2>
+                <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
+                <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">一定會客滿的地方</a>
+                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">可能有位置的地方</a>
+                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">要走點路但是好吃</a>
+            </div> 
 
         <div data-role="header">
             <h1>很近但人卻不太多</h1>
@@ -154,10 +179,9 @@
             <ol>火雞肉飯</ol>
             <ol>春捲</ol>
             <ol>好粥對麵</ol></p>
-        <a href="#home">首頁</a>
-        <a href="#page01">一定會客滿的地方</a>
-        <a href="#page02">可能有位置的地方</a>
-        <a href="#page03">要走點路但是好吃</a>
+
+        <a href="#myPanel3" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
+
 
         </div><!-- /content -->
 
@@ -165,6 +189,19 @@
         <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
         </div><!-- /footer -->
 
+    </div><!-- /page -->
+
+    <!-- 第五分頁 -->
+    <div data-dialog="true" id="aboutus">
+        <div data-role="header">
+            <h1>建議來源</h1>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+        <p>這些建議來自常常吃不到午餐的文藻學生。</p>
+
+        <div data-role="footer" data-position="fixed">
+        <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
+        </div><!-- /footer -->
     </div><!-- /page -->
 
 
